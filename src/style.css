@@ -1,0 +1,302 @@
+:root{
+    --yellow: #ffc107;
+    --blue: #2196f3;
+    --green: #4caf50;
+    --red: #f44336;
+    --purple: #9c27b0;
+    --orange: #ff9800;
+    --light-violet: #4e3ce8;
+    --navy-blue: #2196f3;
+    --main-card-color: #272775;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    outline: none;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    color: white;
+}
+body{
+    background-color: rgb(18, 18, 60);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+main{
+    width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    overflow: hidden;
+}
+.main-container{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.card{
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px rgb(18, 18, 60);
+    background-color: white;
+    flex-shrink: 1;
+    flex-grow: .2;
+    position: relative;
+    overflow: hidden;
+}
+.orange{
+    background-color: var(--orange);
+}
+.red{
+    background-color: var(--red);
+}
+.green{
+    background-color: var(--green);
+}
+.blue{
+    background-color: var(--blue);
+}
+.yellow{
+    background-color: var(--yellow);
+}
+.purple{
+    background-color: var(--purple);
+}
+i{
+    position: absolute;
+    top: 222px;
+    width: 100px;
+    height: 100px;
+    /* scale: 4; */
+    left: 187px;
+    opacity: .4;
+    transform: rotate(45deg) scale(4);
+}
+.card-content{
+    width: 100%;
+    height: 100%;
+    margin-top: 63px;
+    background: var(--main-card-color);
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 26px;
+    z-index: 1;
+}
+.card-body{
+    text-align: left;
+}
+.card-body .description{
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+.big{
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 17px 0 -7px 0;
+    font-family: helvetica;
+    font-weight: 200;
+    color: white;
+
+}
+.card-content-head{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card:hover > .card-content{
+  /* lighter bg */
+    background: var(--main-card-color);
+    opacity: .7;
+}
+
+/* sidebar */
+.side{
+    width: 300px;
+    background-color: rgb(25, 25, 92);
+    border-radius: 10px;
+}
+.img-container{
+    width: 100px;
+    height: 100px;
+    background-image: url('../public/human.JPG');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-bottom: 30px;
+}
+.side-head{
+    background:rgb(95, 76, 234);
+    border-radius: 10px;
+    width: 100%; 
+    padding: 25px 0 65px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.head-content{
+    text-align: left;
+    padding-left: 25px;
+}
+nav{
+    padding: 25px;
+    margin-top: -10px;
+}
+nav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-around;
+    height: 90px;
+   
+}
+ul li a{
+    color: rgb(167, 157, 243);
+}
+ul li a.active{
+    color: white;
+}
+ul li a:hover{
+    color: rgb(208, 202, 255);
+}
+
+/* media query for mobile */
+@media screen and (max-width: 1000px){
+    body{
+        overflow-y: scroll;
+    }
+    main{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding: 10px;
+        overflow-y: scroll;
+        padding: 20px 5px;
+    }
+    .card{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 0px 10px rgb(18, 18, 60);
+        background-color: white;
+        flex-shrink: 1;
+        flex-grow: .2;
+        position: relative;
+        overflow: hidden;
+    }
+    .card-content{
+        width: 100%;
+        height: 100%;
+        margin-top: 63px;
+        background: var(--main-card-color);
+        border-radius: 10px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 26px;
+        z-index: 1;
+    }
+    .big{
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin: 17px 0 -7px 0;
+        font-family: helvetica;
+        font-weight: 200;
+        color: white;
+    }
+    .card-content-head{
+        display: flex;
+        justify-content: space-between;
+    }
+    .side{
+        width: 100%;
+        background-color: rgb(25, 25, 92);
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+    .img-container{
+        width: 100px;
+        height: 100px;
+        background-image: url('../public/human.JPG');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+        border: 2px solid white;
+        margin-bottom: 30px;
+    }
+    .side-head{
+        background:rgb(95, 76, 234);
+        border-radius: 10px;
+        width: 100%; 
+        padding: 25px 20px 25px 25px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        height: 0;
+        margin-bottom: 10px;
+    }
+    ul li a{
+        color: rgb(167, 157, 243);
+    }
+    ul li a:hover{
+        color: rgb(208, 202, 255);
+    }
+    .side-head p{
+        font-size: .9rem;
+    }
+    .big{
+        font-size: 1.5rem;
+    }
+    .orange{
+        background-color: var(--orange);
+    }
+    .red{
+        background-color: var(--red);
+    }
+    .green{
+        background-color: var(--green);
+    }
+    .blue{
+        background-color: var(--blue);
+    }
+    .yellow{
+        background-color: var(--yellow);
+    }
+    .purple{
+        background-color: var(--purple);
+    }
+    .card-body{
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+
+}

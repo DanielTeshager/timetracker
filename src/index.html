@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+<!-- fontawesome cdn -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">  
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  
+  <main>
+    <div class="side">
+      <div class="side-head">
+        <div class="img-container">
+          <!-- <img src="human.JPG" alt="Frontend Mentor logo"> -->
+        </div>
+         <div class="head-content">
+          <p>Report for </p>
+          <h2 class="big">Daniel Teshager</h2> 
+         </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Daily</a></li>
+          <li><a href="#">Weekly</a></li>
+          <li><a href="#">Monthyl</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="main-container">
+      <div class="card orange">
+        <div class="card-head">
+          <i class="fa fa-briefcase fa-6" aria-hidden="true"></i>
+        </div>
+        <div class="card-content">
+          <div class="card-content-head">
+            <span>work</span>
+            <span>...</span>
+          </div>
+          <div class="card-body">
+            <h2 class="big">32hrs</h2>
+            <p class="description">Last week 32hrs.</p>
+           </div>
+        </div>
+      </div>
+
+      <div class="card blue">
+        <div class="card-head">
+          <i class="fa-solid fa-gamepad"></i> 
+        </div>
+        <div class="card-content">
+          <div class="card-content-head">
+            <span>work</span>
+            <span>...</span>
+          </div>
+         <div class="card-body">
+          <h2 class="big">32hrs</h2>
+          <p class="description">Last week 32hrs.</p>
+         </div>
+        </div>
+      </div>
+
+      <div class="card red">
+        <div class="card-head">
+          <i class="fa-solid fa-book-open"></i>
+        </div>
+        <div class="card-content">
+          <div class="card-content-head">
+            <span>work</span>
+            <span>...</span>
+          </div>
+          <div class="card-body">
+            <h2 class="big">32hrs</h2>
+            <p class="description">Last week 32hrs.</p>
+           </div>
+        </div>
+      </div>
+
+      <div class="card green">
+        <div class="card-head">
+          <i class="fa-solid fa-dna fa-6"></i>
+        </div>
+        <div class="card-content">
+          <div class="card-content-head">
+            <span>work</span>
+            <span>...</span>
+          </div>
+          <div class="card-body">
+            <h2 class="big">32hrs</h2>
+            <p class="description">Last week 32hrs.</p>
+           </div>
+        </div>
+      </div>
+
+      <div class="card purple">
+        <div class="card-head">
+          <i class="fa-solid fa-atom"></i>
+        </div>
+        <div class="card-content">
+          <div class="card-content-head">
+            <span>work</span>
+            <span>...</span>
+          </div>
+          <div class="card-body">
+            <h2 class="big">32hrs</h2>
+            <p class="description">Last week 32hrs.</p>
+           </div>
+        </div>
+      </div>
+
+      <div class="card yellow">
+        <div class="card-head">
+          <i class="fa-solid fa-flask"></i>
+        </div>
+        <div class="card-content">
+          <div class="card-content-head">
+            <span>work</span>
+            <span>...</span>
+          </div>
+          <div class="card-body">
+            <h2 class="big">32hrs</h2>
+            <p class="description">Last week 32hrs.</p>
+           </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script type="text/javascript" src="data.json"></script>
+<script src="./app.js"></script>
+</body>
+</html>
